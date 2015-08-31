@@ -44,8 +44,7 @@ var warnings = [
   'no-nested-ternary',
   'no-new-object',
   'no-spaced-func',
-  'no-wrap-func',
-  'spaced-line-comment',
+  'spaced-comment',
 
 ];
 
