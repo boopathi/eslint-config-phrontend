@@ -56,10 +56,10 @@ var rules = {
   'key-spacing': [2, {'beforeColon': false, 'afterColon': true }],
   'max-nested-callbacks': [2, 3],
   'no-multiple-empty-lines': [1, {'max': 2}],
-  'quotes'					: [2, 'single'],
-  'semi'						: [2, 'always'],
-  'semi-spacing'				: [2, {'before': false, 'after': true}],
-  'space-after-keywords'		: [2, 'always'],
+  'quotes': [2, 'single'],
+  'semi': [2, 'always'],
+  'semi-spacing': [2, {'before': false, 'after': true}],
+  'space-after-keywords': [2, 'always'],
 };
 
 warnings.map(function(w) { rules[w] = 1; });
