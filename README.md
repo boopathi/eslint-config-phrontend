@@ -8,6 +8,12 @@ An eslint config for [phrontend](https://github.com/flipkart-incubator/phrontend
 npm install eslint-config-phrontend --save-dev
 ```
 
+eslint-config-phrontend uses [babel-eslint](https://github.com/babel/babel-eslint) as the parser. If you're using npm@3, peerDependencies are not automatically installed. So you'd have to manually install babel-eslint.
+
+```sh
+npm install babel-eslint --save-dev
+```
+
 ## Usage
 
 ```js
