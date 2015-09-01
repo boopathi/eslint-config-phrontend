@@ -48,17 +48,17 @@ var warnings = [
 
 ];
 
-// others
+// ones that take options
 var rules = {
   indent: [2, 2],
-  'comma-spacing': [2, {'before': false, 'after': true}],
+  'comma-spacing': [2, { before: false, after: true }],
   'comma-style': [2, 'last'],
-  'key-spacing': [2, {'beforeColon': false, 'afterColon': true }],
+  'key-spacing': [2, { beforeColon: false, afterColon: true }],
   'max-nested-callbacks': [2, 3],
-  'no-multiple-empty-lines': [1, {'max': 2}],
+  'no-multiple-empty-lines': [1, { max: 2 }],
   'quotes': [2, 'single'],
   'semi': [2, 'always'],
-  'semi-spacing': [2, {'before': false, 'after': true}],
+  'semi-spacing': [2, { before: false, after: true }],
   'space-after-keywords': [2, 'always'],
 };
 
