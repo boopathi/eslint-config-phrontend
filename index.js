@@ -10,8 +10,7 @@ var errors = [
   'no-with',
   'eqeqeq',
   'eol-last',
-  'no-trailing-spaces',
-  'space-return-throw-case',
+  'no-trailing-spaces'
 ];
 
 // Warnings
@@ -45,6 +44,7 @@ var warnings = [
   'no-new-object',
   'no-spaced-func',
   'spaced-comment',
+  'keyword-spacing'
 
 ];
 
@@ -58,8 +58,7 @@ var rules = {
   'no-multiple-empty-lines': [1, { max: 2 }],
   'quotes': [2, 'single'],
   'semi': [2, 'always'],
-  'semi-spacing': [2, { before: false, after: true }],
-  'space-after-keywords': [2, 'always'],
+  'semi-spacing': [2, { before: false, after: true }]
 };
 
 warnings.map(function(w) { rules[w] = 1; });
@@ -72,7 +71,17 @@ module.exports = {
     node: true,
     browser: true
   },
+  globals: {
+    Promise: true,
+    Symbol: true
+  },
+  parserOptions: {
+    ecmaVersion: 6,
+    sourceType: 'module',
+    ecmaFeatures: {
+      impliedStrict: true
+    }
+  },
   extends: 'eslint:recommended',
-  parser: 'babel-eslint',
   rules: rules
 };
